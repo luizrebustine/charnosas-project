@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Bar</title>
+    <style>
+        /*Configurações Gerais*/
+        *{
+            margin:0px;
+            padding: 0px;
+        }
+        /*Configurações body*/
+        body{
+            background:white;
+            margin: 0px;
+            width: 100vw;
+            height: 100vh;
+        }
+        header{
+            background: #E20088;
+            display: flex;
+            margin: auto;
+            align-items:center;
+            justify-content: space-between;
+            padding: 0px 2vw;
+        }
+        /*Caixa de Pesquisa*/
+        .search_box{
+            display: flex;
+            border-radius: 40px;
+            padding: 5px;
+            background-color: white;
+            justify-content: space-between;
+            align-items: center;
+            width: 50vw;
+            margin: auto;
+        }
+        .search_input{
+            border: none;
+            background: none;
+            outline: none;
+            padding: 0px 0px 0px 20px;
+            color: #E20088;
+            font: normal 1em 'Arial';
+            line-height: 0px;
+            width: 100%;
+        }
+        .search_lupa{
+            padding:5px 13px 5px 5px;
+        }
+        /*Logo Charmosa*/
+        .logo{
+            max-width: 14vw;
+        }
+        .logo img{
+            width:100%;
+        }
+        /*Parte do Atendimento*/
+        .atendimento_container{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 14vw;
+        }
+        .atendimento_link a{
+            font: normal 1.2vw 'Arial';
+            color: white;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+        .atendimento_icone{
+            padding: 5px;
+        }
+        /*Barra de Navegação*/
+        nav{
+            background-color: #E20088;
+            padding:0px 20px 30px 20px;
+        }
+        ul{
+            max-width: 810px;
+            margin: auto;
+            list-style-type: none;
+            display: flex;
+            justify-content: space-between;
+            padding: 0px;
+        }
+        nav a{
+            color: white;
+            text-decoration: none;
+            font: normal 1.3em 'Arial';
+        }
+        a:hover{
+            color: #e4a1c9;
+        }
+        @media (max-width:730px) {
+            nav a{
+                font-size: 3vw;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="imagens/logomine.png" alt="">
+        </div>
+        <div class="search_box">
+            <input type="text" class="search_input" placeholder="O que você está buscando?">
+            <a href="#" class="search_lupa"><img src="imagens/searchrosa.png" alt="Lupa"></a>
+        </div>
+        <div class="atendimento_container">
+            <div class="atendimento_link"><a href="">Atendimento</a></div>
+            <div class="atendimento_icone"><img src="imagens/live-chat.png" alt=""></div>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#">Início</a></li>
+            <li><a href="#">Coleção</a></li>
+            <li><a href="#">Acessórios</a></li>
+            <li><a href="#">Calças</a></li>
+            <li><a href="#">Croppeds</a></li>
+            <li><a href="#">Moda Mandrake</a></li>
+        </ul>
+    </nav>
+</body>
+</html>
