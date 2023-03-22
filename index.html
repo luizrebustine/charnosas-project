@@ -21,11 +21,17 @@
         }
         header{
             background: #E20088;
+
+            padding: 0px 2vw;
+        }
+        #hdc{
+            max-width: 1200px;
+            min-width: 320px;
+            margin: auto;
             display: flex;
             margin: auto;
             align-items:center;
             justify-content: space-between;
-            padding: 0px 2vw;
         }
         /*Caixa de Pesquisa*/
         .search_box{
@@ -35,7 +41,7 @@
             background-color: white;
             justify-content: space-between;
             align-items: center;
-            width: 50vw;
+            width: 30vw;
             margin: auto;
         }
         .search_input{
@@ -53,7 +59,7 @@
         }
         /*Logo Charmosa*/
         .logo{
-            max-width: 14vw;
+            max-width: 6vw;
         }
         .logo img{
             width:100%;
@@ -63,10 +69,10 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            width: 14vw;
+            width: 6vw;
         }
         .atendimento_link a{
-            font: bold 1.2vw 'Comfortaa', cursive;
+            font: bold 1vw 'Comfortaa', cursive;
             color: white;
             text-decoration: none;
             text-transform: uppercase;
@@ -77,7 +83,7 @@
         /*Barra de Navegação*/
         nav{
             background-color: #E20088;
-            padding:0px 20px 30px 20px;
+            padding:10px 20px 30px 20px;
         }
         ul{
             max-width: 810px;
@@ -90,7 +96,7 @@
         nav a{
             color: white;
             text-decoration: none;
-            font: normal 1.3em     'Comfortaa', cursive;
+            font: normal 1.1em 'Comfortaa', cursive;
         }
         a:hover{
             color: #e4a1c9;
@@ -105,17 +111,19 @@
 </head>
 <body>
     <header>
-        <div class="logo">
-            <img src="imagens/logomine.png" alt="">
-        </div>
-        <div class="search_box">
-            <input type="text" class="search_input" placeholder="O que você está buscando?">
-            <a href="#" class="search_lupa"><img src="imagens/searchrosa.png" alt="Lupa"></a>
-        </div>
-        <div class="atendimento_container">
-            <div class="atendimento_link"><a href="">Atendimento</a></div>
-            <div class="atendimento_icone"><img src="imagens/live-chat.png" alt=""></div>
-        </div>
+        <section id="hdc">
+            <div class="logo">
+                <img src="imagens/logo.png" alt="">
+            </div>
+            <div class="search_box">
+                <input type="text" class="search_input" placeholder="O que você está buscando?">
+                <a href="#" class="search_lupa"><img src="imagens/searchrosa.png" alt="Lupa"></a>
+            </div>
+            <div class="atendimento_container">
+                <div class="atendimento_link"><a href="">Atendimento</a></div>
+                <div class="atendimento_icone"><img src="imagens/live-chat.png" alt=""></div>
+            </div>
+        </section>
     </header>
     <nav>
         <ul>
