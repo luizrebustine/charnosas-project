@@ -33,8 +33,6 @@
             border-radius: 40px;
             padding: 5px;
             background-color: white;
-            justify-content: space-between;
-            align-items: center;
             width: 50vw;
             margin: auto;
         }
@@ -42,14 +40,13 @@
             border: none;
             background: none;
             outline: none;
-            padding: 0px 0px 0px 20px;
+            padding: 0px 7px 0px 20px;
             color: #E20088;
             font: normal 1em 'Comfortaa', cursive;
-            line-height: 0px;
             width: 100%;
         }
         .search_lupa{
-            padding:5px 13px 5px 5px;
+            padding:5px 12px 5px 5px;
         }
         /*Logo Charmosa*/
         .logo{
@@ -85,28 +82,30 @@
             list-style-type: none;
             display: flex;
             justify-content: space-between;
-            padding: 0px;
         }
         nav a{
             color: white;
             text-decoration: none;
-            font: normal 1.3em     'Comfortaa', cursive;
+            font: normal 1.3em 'Comfortaa', cursive;
         }
         a:hover{
             color: #e4a1c9;
             transition: 0.24s;
         }
-        @media (max-width:730px) {
+        @media (max-width:800px) {
             nav a{
-                font-size: 3vw;
+                font-size: 2.5vw;
             }
+        }
+        #banners{
+            
         }
     </style>
 </head>
 <body>
     <header>
         <div class="logo">
-            <img src="imagens/logomine.png" alt="">
+            <img src="imagens/logo.png" alt="">
         </div>
         <div class="search_box">
             <input type="text" class="search_input" placeholder="O que você está buscando?">
@@ -127,5 +126,8 @@
             <li><a href="#">Moda Mandrake</a></li>
         </ul>
     </nav>
+    <section id="banners">
+        <img src="imagens/banner1.jpg" alt="">
+    </section>
 </body>
 </html>
